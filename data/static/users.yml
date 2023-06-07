@@ -30,6 +30,7 @@
 -
   email: jim
   password: 'ncc-1701'
+  totpSecret: startrak
   key: jim
   role: 'customer'
   walletBalance: 100

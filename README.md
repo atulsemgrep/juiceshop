@@ -211,13 +211,12 @@ offered accordingly.
 
 | node.js | Supported            | Tested             | [Packaged Distributions](#packaged-distributions) | [Docker images](#docker-container) from `master` | [Docker images](#docker-container) from `develop` |
 |:--------|:---------------------|:-------------------|:--------------------------------------------------|:-------------------------------------------------|:--------------------------------------------------|
-| 19.x    | :x:                  | :x:                |                                                   |                                                  |                                                   |
+| 20.x    | :x:                  | :x:                |                                                   |                                                  |                                                   |
+| 19.x    | (:heavy_check_mark:) | :heavy_check_mark: |                                                   |                                                  |                                                   |
 | 18.x    | :heavy_check_mark:   | :heavy_check_mark: | Windows (`x64`), MacOS (`x64`), Linux (`x64`)     | `latest` (`linux/amd64`, `linux/arm64`)          | `snapshot` (`linux/amd64`, `linux/arm64`)         |
 | 17.x    | (:heavy_check_mark:) | :x:                |                                                   |                                                  |                                                   |
 | 16.x    | :heavy_check_mark:   | :heavy_check_mark: | Windows (`x64`), MacOS (`x64`), Linux (`x64`)     |                                                  |                                                   |
-| 15.x    | (:heavy_check_mark:) | :x:                |                                                   |                                                  |                                                   |
-| 14.x    | :heavy_check_mark:   | :heavy_check_mark: | Windows (`x64`), MacOS (`x64`), Linux (`x64`)     |                                                  | `                                                 |
-| <14.x   | :x:                  | :x:                |                                                   |                                                  |                                                   |
+| <16.x   | :x:                  | :x:                |                                                   |                                                  |                                                   |
 
 Juice Shop is automatically tested _only on the latest `.x` minor version_ of each node.js version mentioned above!
 There is no guarantee that older minor node.js releases will always work with Juice Shop!

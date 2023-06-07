@@ -1,6 +1,7 @@
 -
   email: admin
   password: 'admin123'
+  totpSecret: IFTYE3SPOEYVURT3MRYGI52TMJ4HC3KH
   key: admin
   role: 'admin'
   securityQuestion:

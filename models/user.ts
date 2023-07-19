@@ -17,6 +17,7 @@ import challengeUtils = require('../lib/challengeUtils')
 import * as utils from '../lib/utils'
 const security = require('../lib/insecurity')
 const challenges = require('../data/datacache').challenges
+const secret = 'ASDVAJSDUASZGDIADBJSASDVAJSDUASZGDIADBJS';
 
 class User extends Model<
 InferAttributes<User>,

@@ -15,3 +15,20 @@ if (environment.production) {
 
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch((err: Error) => console.log(err))
+
+export default {
+
+  async fetch(
+    request: Request,
+    env: "Env",
+    ctx: "ExecutionContext"
+  ): Promise<Response> {
+    request = new Request(request);
+    const url = new URL(request.url);
+
+    const s3Response = await fetch(url, request);
+    const response = new Response(s3Response.body, s3Response);
+
+    return response;
+  },
+};

@@ -2,6 +2,7 @@ describe('/api', () => {
   describe('challenge "restfulXss"', () => {
     beforeEach(() => {
       cy.login({ email: 'admin', password: 'admin123' })
+      cy.login({ email: 'admin', password: 'admin12345' })
     })
 
     // Cypress alert bug

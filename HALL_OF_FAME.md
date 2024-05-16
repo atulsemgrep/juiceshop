@@ -12,7 +12,7 @@
 ## GitHub Contributors
 
 As reported by [`git-stats -a -s '2014'`](https://www.npmjs.com/package/git-stats) analysis of `master` as of Fri, 19 May
-2023 after deduplication with `.mailmap`.
+2023 after deduplication with `.mailmap`:
 
 ![Top git contributors](screenshots/git-stats.png)
 

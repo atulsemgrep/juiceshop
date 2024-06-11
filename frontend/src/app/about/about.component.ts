@@ -86,7 +86,7 @@ export class AboutComponent implements OnInit {
         this.slideshowDataSource.push({ url: this.images[i % this.images.length], caption: feedbacks[i].comment })
       }
     }, (err) => {
-      console.log(err)
+      console.warn(err)
     })
   }
 }

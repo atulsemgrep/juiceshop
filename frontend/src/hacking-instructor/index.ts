@@ -165,7 +165,7 @@ export async function startHackingInstructorFor (challengeName: String): Promise
   for (const hint of challengeInstruction.hints) {
     const element = loadHint(hint)
     if (!element) {
-      console.warn(`Could not find Element with fixture "${hint.fixture}"`)
+      console.log(`Could not find Element with fixture "${hint.fixture}"`)
       continue
     }
     element.scrollIntoView()

@@ -33,6 +33,7 @@ export class OrderCompletionComponent implements OnInit {
 
   constructor (private readonly configurationService: ConfigurationService, private readonly addressService: AddressService, private readonly trackOrderService: TrackOrderService, public activatedRoute: ActivatedRoute, private readonly basketService: BasketService) { }
 
+  // TODO: Random thingie
   ngOnInit () {
     this.activatedRoute.paramMap.subscribe((paramMap: ParamMap) => {
       this.orderId = paramMap.get('id')
@@ -47,6 +48,7 @@ export class OrderCompletionComponent implements OnInit {
         this.orderDetails.eta = results.data[0].eta || '?'
         this.orderDetails.products = results.data[0].products
         this.orderDetails.bonus = results.data[0].bonus
+        console.log(this.orderDetails.bonus)
         this.dataSource = new MatTableDataSource<Element>(this.orderDetails.products)
         for (const product of this.orderDetails.products) {
           // eslint-disable-next-line @typescript-eslint/restrict-template-expressions

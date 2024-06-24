@@ -28,6 +28,7 @@ export class BasketComponent {
 
   getProductCount (total) {
     this.productCount = total
+    console.log(total)
   }
 
   getBonusPoints (total) {

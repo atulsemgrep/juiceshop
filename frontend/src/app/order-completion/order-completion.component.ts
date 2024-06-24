@@ -33,6 +33,7 @@ export class OrderCompletionComponent implements OnInit {
 
   constructor (private readonly configurationService: ConfigurationService, private readonly addressService: AddressService, private readonly trackOrderService: TrackOrderService, public activatedRoute: ActivatedRoute, private readonly basketService: BasketService) { }
 
+  // TODO: Random thingie
   ngOnInit () {
     this.activatedRoute.paramMap.subscribe((paramMap: ParamMap) => {
       this.orderId = paramMap.get('id')

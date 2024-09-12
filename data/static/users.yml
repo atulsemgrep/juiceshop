@@ -1,6 +1,7 @@
 -
   email: admin
   password: 'admin123'
+  totpSecret: IFTYE3SPOEYVURT3MRYGI52TMJ4HC3KH
   key: admin
   role: 'admin'
   securityQuestion:
@@ -29,6 +30,7 @@
 -
   email: jim
   password: 'ncc-1701'
+  totpSecret: startrak
   key: jim
   role: 'customer'
   walletBalance: 100

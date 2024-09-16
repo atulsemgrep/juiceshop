@@ -235,6 +235,7 @@
   email: john
   username: j0hNny
   password: 'y&x5Z#f6W532Z4445#Ae2HkwZVyDb7&oCUaDzFU'
+  secret: 'ThisIsALongEnoughSecretToSeemDangerous'
   key: john
   role: 'customer'
 -

@@ -190,18 +190,3 @@ export const appendUserId = () => {
     }
   }
 }
-
-export const updateAuthenticatedUsers = () => (req: Request, res: Response, next: NextFunction) => {
-  const token = req.cookies.token || utils.jwtFrom(req)
-  if (token) {
-    jwt.verify(token, publicKey, (err: Error | null, decoded: any) => {
-      if (err === null) {
-        if (authenticatedUsers.get(token) === undefined) {
-          authenticatedUsers.put(token, decoded)
-          res.cookie('token', token)
-        }
-      }
-    })
-  }
-  next()
-}
